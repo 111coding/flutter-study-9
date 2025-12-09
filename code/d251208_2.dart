@@ -6,18 +6,20 @@ void main() {
   // 두번째 미션 : 구구단 2단부터 9단까지 출력
 
   for (var j = 2; j <= 9; j++) {
-    for (var i = 1; i <= 9; i++) {
-      print('$j * $i = ${j * i}');
-    }
+    mulTable(j);
   }
 
-  // print('2 * 1 = 2');
-  // print('2 * 2 = 4');
-  // print('2 * 3 = 6');
-  // print('2 * 4 = 8');
-  // print('2 * 5 = 10');
-  // print('2 * 6 = 12');
-  // print('2 * 7 = 14');
-  // print('2 * 8 = 16');
-  // print('2 * 9 = 18');
+  mulTable(3);
+  mulTable(7);
+}
+
+/// 특정 단수의 구구단을 출력하는 함수!
+///
+/// [number] : 출력할 단 번호
+void mulTable(int number) {
+  // ===== 함수 시작 =====
+  for (var i = 1; i <= 9; i++) {
+    print('$number * $i = ${number * i}');
+  }
+  // ===== 함수 끝 =====
 }
